@@ -1,23 +1,17 @@
 nav {
-  max-width: 980px;
+  //   max-width: 980px;
   height: 92px;
-  // background-color: navy;
+  background-color: lightblue;
   margin: 0 auto;
-
-  // nav that stays on top - remove "margin-top: -92px" from home.scss
-  // position: fixed;
-  // left: 50%;
-  // transform: translateX(-50%);
-
-  // nav that scrolls with website
-  position: absolute;
-  left: 0;
-  right: 0;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 3;
+
+  img {
+    height: 80px;
+  }
 
   .logo-icon {
     width: 92px;
@@ -29,12 +23,14 @@ nav {
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
     flex-wrap: wrap;
 
     .link-button {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
 
       height: 22px;
       padding: 0 20px;
@@ -42,21 +38,12 @@ nav {
       a {
         // color: #fff;
         text-decoration: none;
-        font-family: Gill-Sans;
         font-size: 15px;
         letter-spacing: 1.5px;
 
         white-space: nowrap;
       }
     }
-
-    .link-button + .link-button {
-      border-left: 1.5px solid blue;
-    }
-  }
-
-  a .logo-icon {
-    background-image: url("../images/logo/logo-black.png");
   }
 
   #hamburger-icon {
@@ -97,25 +84,13 @@ nav {
   transition: 0.4s;
 
   height: 100vh;
-  width: calc(100% - 80px);
-  padding: 0 20px;
+  width: calc(100% - 150px);
+  padding: 0 40px;
 
   background-color: #fff;
 
   display: flex;
   flex-direction: column;
-
-  .mobile-logo {
-    height: 92px;
-    border-bottom: 2px solid black;
-    display: flex;
-    align-items: center;
-
-    .logo-icon {
-      background-image: url(../images/logo/logo-black.png) !important;
-      background-repeat: no-repeat;
-    }
-  }
 
   .mobile-links {
     padding: 20px 0;
@@ -126,7 +101,6 @@ nav {
       a {
         color: #000;
         text-decoration: none;
-        font-family: Gill-Sans;
         font-size: 24px;
         letter-spacing: 1.5px;
 
@@ -184,7 +158,8 @@ body.open {
 
 @media (width <= (980px + 40px)) {
   nav {
-    margin: 0 20px;
+    padding: 0 20px;
+    justify-content: space-between;
 
     .links {
       display: none;
