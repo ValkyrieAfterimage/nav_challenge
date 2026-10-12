@@ -1,20 +1,17 @@
 import { home } from "../pages/home.js";
-import { about } from "../pages/about.js";
+import { visit } from "../pages/visit.js";
+import { questions } from "../pages/questions.js";
+import { contact } from "../pages/contact.js";
+
 export function changePage(pageName) {
   console.log(pageName);
-
+  document.body.classList.remove("open");
   document.querySelector("#app").innerHTML = pages[pageName];
 }
 
-const products = `
-  <p>Products</p>
-`;
-const contact = `
-  <p>Contacts</p>
-`;
 const pages = {
   home,
-  about,
+  visit,
+  questions,
   contact,
-  products,
 };

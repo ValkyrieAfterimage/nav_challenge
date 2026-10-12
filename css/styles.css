@@ -146,3 +146,172 @@ body,
 a {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+footer {
+  min-height: 30px;
+  padding: 35px 30px;
+  background-color: lightblue;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  margin-bottom: 8px;
+  text-align: center;
+}
+footer p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+footer p:last-child {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.pageStyle {
+  padding-bottom: 80px;
+}
+.pageStyle .banner {
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+.pageStyle .banner__text {
+  width: 100%;
+  padding: 55px 8%;
+  color: #ffffff;
+  background-color: rgba(35, 48, 35, 0.55);
+}
+.pageStyle .banner__text p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.pageStyle .banner__text h1 {
+  margin-bottom: 5px;
+  font-size: 54px;
+}
+.pageStyle .banner__text span {
+  font-size: 18px;
+}
+.pageStyle .banner--home {
+  background-image: url("../images/glacier3.avif");
+}
+.pageStyle .banner--visit {
+  background-image: url("../images/glacier5.avif");
+}
+.pageStyle .banner--questions {
+  background-image: url("../images/climate1.webp");
+}
+.pageStyle .banner--contact {
+  background-image: url("../images/glacier2.avif");
+}
+.pageStyle .pageIntro {
+  max-width: 800px;
+  margin: 80px auto 60px;
+  padding: 0 30px;
+  text-align: center;
+}
+.pageStyle .pageIntro__label {
+  color: #014760;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.pageStyle .pageIntro h2 {
+  color: white;
+  font-size: 38px;
+}
+.pageStyle .pageIntro p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+.pageStyle .infoBlock {
+  max-width: 440px;
+  min-height: 400px;
+  margin: 0 auto 55px;
+  margin-right: 8px;
+  margin-left: 8px;
+  background-color: #014760;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+.pageStyle .infoBlock__text {
+  width: 50%;
+  padding: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pageStyle .infoBlock__text h2 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.pageStyle .infoBlock__text p {
+  color: #add8e6;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.pageStyle .infoBlock__label {
+  color: #8a6948;
+  font-size: 12px !important;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 10px !important;
+}
+.pageStyle .infoBlock__image {
+  width: 50%;
+  object-fit: cover;
+}
+.pageStyle .infoBlock--reverse {
+  flex-direction: row-reverse;
+  background-color: #d2b48c;
+}
+.pageStyle .infoBlock--reverse h2 {
+  color: white;
+  font-size: 22px;
+}
+.pageStyle .infoBlock--reverse p {
+  color: #a67b5b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.pageStyle .contactCard {
+  max-width: 800px;
+  margin: 80px auto 0;
+  padding: 60px;
+  margin-right: 8px;
+  margin-left: 8px;
+  background-color: #014760;
+  color: #ffffff;
+  border-radius: 30px;
+  text-align: center;
+}
+.pageStyle .contactCard__label {
+  color: #d8c7a7;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.pageStyle .contactCard h2 {
+  font-size: 36px;
+}
+.pageStyle .contactCard p {
+  line-height: 1.7;
+}
+.pageStyle .contactCard__location {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-weight: bold;
+}

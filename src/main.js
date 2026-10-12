@@ -1,3 +1,4 @@
+// mobile nav
 const hamburger = document.querySelector("#hamburger-icon");
 const cover = document.querySelector(".cover");
 
@@ -10,6 +11,7 @@ cover.addEventListener("click", () => {
   console.log("test2");
 });
 
+// page changer
 import { changePage } from "./model.js";
 
 function changeRoute() {
